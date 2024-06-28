@@ -3,7 +3,7 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 from safetensors.torch import load_file
 import torch
 import os
-model_dir = "E:/ChatBot/finetuned_chatbot"
+model_dir = "."
 #safetensors_file = os.path.join(model_dir, "adapter_model.safetensors")
 #pytorch_model_file = os.path.join(model_dir, "pytorch_model.bin")
 #state_dict = load_file(safetensors_file)
