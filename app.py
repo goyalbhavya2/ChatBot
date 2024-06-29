@@ -11,7 +11,7 @@ model_dir = "."
 
 
 def load_model_and_tokenizer(model_path):
-    model = AutoModelForSeq2SeqLM.from_pretrained(model_path,local_files_only=True)
+    model = AutoModelForSeq2SeqLM.from_pretrained(model_path,local_files_only=True,torch_dtype=torch.float16)
     tokenizer = AutoTokenizer.from_pretrained(model_path,local_files_only=True)
     return model, tokenizer
 
